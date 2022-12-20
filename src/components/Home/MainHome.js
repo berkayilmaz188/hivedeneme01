@@ -9,7 +9,7 @@ function MainHome() {
     
   <div className="p-5 mb-4 bg-light rounded-3">
       <div className="container-fluid py-5">
-        <h1 className="display-5 fw-bold">BeehiLive'a Hos Geldiniz !</h1>
+        <h1 className="display-5 fw-bold">BeehiLive a Hos Geldiniz !</h1>
         <h5>Uyeliniz yoksa hemen <a href="/register"> tıklayarak </a> uyelik olusturabilirsiniz.</h5>
         <h5>Uyeliginiz varsa sol ustteki login butonu ile giris yapabilirsiniz.</h5>
         

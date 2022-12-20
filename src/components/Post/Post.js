@@ -8,10 +8,16 @@ import PropTypes from 'prop-types';
 function Post(props) {
 
   Post.propTypes = {
-    title: PropTypes.object
+    title: PropTypes.string
+  };
+  Post.propTypes = {
+    text: PropTypes.string
+  };
+  Post.propTypes = {
+    postId: PropTypes.string
   };
 
-    const {title, text, postId} = props.title;
+    const {title, text, postId} = props;
     const jwtToken = localStorage.getItem("JWTAccessKey")
 
     const DeletePost = () => {

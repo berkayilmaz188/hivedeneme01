@@ -64,7 +64,7 @@ const Login = () => {
         <>
             {success ? (
                 <section>
-                    <h1>You are logged in! "{localStorage.getItem("username")}"</h1>
+                    <h1>You are logged in! {localStorage.getItem("username")}</h1>
                     <br />
                     <p>
                         <a href="/home">Go to Home</a>

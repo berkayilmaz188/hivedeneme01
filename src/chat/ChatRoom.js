@@ -175,7 +175,7 @@ const ChatRoom = () => {
                 name="userName"
                 value={userData.username}
                 onChange={handleUsername}
-                margin="normal"
+                
               />
               <button type="button" onClick={registerUser}>
                     connect

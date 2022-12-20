@@ -3,12 +3,23 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Post from "../Post/Post";
+import PropTypes from 'prop-types';
 
 function Home() {
     const [error, setError] = useState(null);
     const [IsLoaded, setIsloaded] = useState(false);
     const [postList, setPostList] = useState([]);
     const jwtToken = localStorage.getItem("JWTAccessKey")
+
+    Home.propTypes = {
+        title: PropTypes.string
+      };
+      Home.propTypes = {
+        text: PropTypes.string
+      };
+      Home.propTypes = {
+        postId: PropTypes.string
+      };
     
     const refreshPosts = () => {
         fetch("/api/post", {
@@ -51,7 +62,7 @@ function Home() {
       <Row>
         <Col> {postList.map(post => (
             
-               <Post title={post.title} text={post.text} postId={post.postId}></Post>
+               <Post key={post.title} title={post.title} text={post.text} postId={post.postId}></Post>
             
         ))} </Col>
       </Row>
