@@ -2,6 +2,8 @@ import Card from 'react-bootstrap/Card';
 import { PostWithAuth } from '../../services/HttpService';
 import Button from 'react-bootstrap/Button';
 import { Navigate } from 'react-router-dom';
+import React from 'react';
+import PropTypes from 'prop-types';
 
 function Post(props) {
 

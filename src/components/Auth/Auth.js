@@ -4,6 +4,7 @@ import Form from 'react-bootstrap/Form';
 import { Navigate } from 'react-router-dom';
 import { PostWithAuth } from '../../services/HttpService';
 import { useNavigate } from 'react-router-dom';
+import React from 'react';
 
 function Auth() {
   const navigate = useNavigate();

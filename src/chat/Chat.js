@@ -1,5 +1,7 @@
+import React from 'react';
 import SockJS from 'socketjs-client';
 import {over} from 'stompjs';
+
 function Chat () {
     var stompClient = null;
     var baseAddress = 'http://localhost:8080';

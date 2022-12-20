@@ -11,7 +11,7 @@ import User from './components/User/User';
 import MainHome from './components/Home/MainHome';
 import ChatRoom from './chat/ChatRoom';
 import Chat from './chat/Chat';
-
+import React from 'react';
 function App() {
   return (
     <div className="App">

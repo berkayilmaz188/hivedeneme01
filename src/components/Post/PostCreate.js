@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button';
 import { useState } from 'react';
 import Alert from 'react-bootstrap/Alert';
 import { PostWithAuth } from '../../services/HttpService';
-
+import React from 'react';
 
 function PostCreate(props) {
 
