@@ -2,7 +2,7 @@ var authClient = new OktaAuth({
     url: 'https://dev-14647327.okta.com',
     issuer: 'https://dev-14647327.okta.com/oauth2/default',
     clientId: '0oa7kc29kx4Afd6Pe5d7',
-    redirectUri: 'http://localhost:8080'
+    redirectUri: 'http://45.136.4.151'
   });
 
   var accessToken = authClient.tokenManager.get('accessToken')

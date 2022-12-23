@@ -1,6 +1,5 @@
 import { useRef, useState, useEffect, useContext } from "react";
 import AuthContext from "./AuthProvider";
-import { Button } from "react-bootstrap";
 import axios from "../../services/axios";
 import React from 'react';
 const LOGIN_URL = '/api/auth/login';
@@ -41,7 +40,6 @@ const Login = () => {
             localStorage.setItem("userId",response?.data?.userId);
             localStorage.setItem("username",response?.data?.username);
             localStorage.setItem("JWTRefreshKey",response?.data?.refreshToken);
-            const roles = response?.data?.roles;
             setAuth({ username, password});
             setUsername('');
             setPassword('');

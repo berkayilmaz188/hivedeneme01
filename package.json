@@ -49,5 +49,6 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://localhost:8080"
+  "proxy": "http://45.136.4.151",
+  "now-build": "react-scripts build && mv build dist"
 }

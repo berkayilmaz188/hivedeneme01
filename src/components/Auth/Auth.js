@@ -41,8 +41,7 @@ function Auth() {
         setUsername("")
         setPassword("")
         console.log(localStorage)
-        
-        //history.go("/auth")
+      
     }
 
     const handleSonuc = () => {
