@@ -1,5 +1,5 @@
 {
     "rewrites": [
-        { "source": "/api/:path*", "destination": "www.beehiliv.com.tr/:8080*"}
+        { "source": ":8080/api/:path*", "destination": "www.beehiliv.com.tr:8080/:path*"}
     ]
 }
