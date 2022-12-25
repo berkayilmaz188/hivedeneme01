@@ -21,7 +21,7 @@ function Post(props) {
     const jwtToken = localStorage.getItem("JWTAccessKey")
 
     const DeletePost = () => {
-      fetch("/api/post/"+ postId, {
+      fetch(":8080/api/post/"+ postId, {
           method: "DELETE",
           headers: {
               "Authorization": `Bearer ${jwtToken}`

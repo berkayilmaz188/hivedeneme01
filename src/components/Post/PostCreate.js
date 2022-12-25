@@ -15,7 +15,7 @@ function PostCreate(props) {
     const jwtToken = localStorage.getItem("JWTAccessKey")
 
     const  savePost = () => {
-        fetch("/api/post/create",
+        fetch(":8080/api/post/create",
         {
             method: "POST",
             headers: {
