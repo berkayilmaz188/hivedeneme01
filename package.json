@@ -49,6 +49,6 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://45.136.4.151:8080",
+  "proxy": "http://www.beehiliv.com.tr:8080",
   "now-build": "react-scripts build && mv build dist"
 }

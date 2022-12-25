@@ -14,7 +14,7 @@ const ChatRoom = () => {
     const [publicChats, setPublicChats] = useState([]); 
     const [tab,setTab] =useState("CHATROOM");
     const [userData, setUserData] = useState({
-        username: '',
+        username: localStorage.getItem("username"),
         receivername: '',
         connected: false,
         message: ''
@@ -123,12 +123,12 @@ const ChatRoom = () => {
         connect();
     }
     return (
-    <div className="container">
+        <div className="container">
         {userData.connected?
         <div className="chat-box">
             <div className="member-list">
                 <ul>
-                    <li onClick={()=>{setTab("CHATROOM")}} className={`member ${tab==="CHATROOM" && "active"}`}>Chatroom</li>
+                    <li onClick={()=>{setTab("CHATROOM")}} className={`member ${tab==="CHATROOM" && "active"}`}>Global</li>
                     {[...privateChats.keys()].map((name,index)=>(
                         <li onClick={()=>{setTab(name)}} className={`member ${tab===name && "active"}`} key={index}>{name}</li>
                     ))}
@@ -169,16 +169,9 @@ const ChatRoom = () => {
         </div>
         :
         <div className="register">
-            <input
-                id="user-name"
-                placeholder="Enter your name"
-                name="userName"
-                value={userData.username}
-                onChange={handleUsername}
-                
-              />
+            
               <button type="button" onClick={registerUser}>
-                    connect
+                    please click and connect to chat demo
               </button> 
         </div>}
     </div>
