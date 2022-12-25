@@ -1,5 +1,0 @@
-{
-    "rewrites": [
-        { "source": "/api/:path*", "destination": "www.beehiliv.com.tr:8080/:path*"}
-    ]
-}
