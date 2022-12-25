@@ -27,7 +27,7 @@ const handleNewPassword = (value) => {
     const jwtToken = localStorage.getItem("JWTAccessKey")
 
     const DeleteUser = () => {
-      fetch(":8080/api/users/"+ localStorage.getItem("userId"), {
+      fetch("/api/users/"+ localStorage.getItem("userId"), {
           method: "DELETE",
           headers: {
               "Authorization": `Bearer ${jwtToken}`
@@ -43,7 +43,7 @@ const handleNewPassword = (value) => {
   }
 
   const sendUpdate = () => {
-     fetch(":8080/api/users/"+localStorage.getItem("userId"), {
+     fetch("/api/users/"+localStorage.getItem("userId"), {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
