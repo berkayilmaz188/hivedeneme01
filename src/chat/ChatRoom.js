@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import {over} from 'stompjs';
 import SockJS from 'sockjs-client';
 import {Stomp} from "stompjs";
-import OktaAuth from '@okta/okta-auth-js';
 import { useLocation } from 'react-router-dom';
 
 
