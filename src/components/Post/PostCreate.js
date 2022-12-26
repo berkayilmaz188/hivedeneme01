@@ -5,6 +5,7 @@ import { useState } from 'react';
 import Alert from 'react-bootstrap/Alert';
 import { PostWithAuth } from '../../services/HttpService';
 import React from 'react';
+import axios from 'axios';
 
 function PostCreate(props) {
 
@@ -14,7 +15,7 @@ function PostCreate(props) {
     const [isSent, setisSent] = useState(false);
     const jwtToken = localStorage.getItem("JWTAccessKey")
 
-    const  savePost = () => {
+    /*const  savePost = () => {
         fetch("/api/post/create",
         {
             method: "POST",
@@ -30,15 +31,40 @@ function PostCreate(props) {
         })
         .then((res) => res.json())
         .catch((err) => console.log("error"))
-    }
+    }*/
 
-    const handleSubmit = () => {
+    const handleSubmit = async (e) => {
+      e.preventDefault();
+
+
+          const response = await axios.post("/api/post/create",
+              JSON.stringify({ title, text }),
+              {
+                  headers: { 'Content-Type': 'application/json',
+                  "Authorization": 'Bearer ' + jwtToken },
+                  
+              }
+          );
+          console.log(JSON.stringify(response?.data));
+          //console.log(JSON.stringify(response));
+          const accessToken = response?.data?.accessToken;
+
+          
+       
+          setTitle('');
+          setText('');
+          setisSent(true);
+
+  }
+
+
+    /*const handleSubmit = () => {
         savePost();
         setisSent(true);
         setTitle("");
         setText("");
 
-    }
+    }*/
 
     const handleTitle = (value) => {
         setTitle(value);
