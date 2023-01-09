@@ -15,13 +15,15 @@ function MainHome() {
         
         
       </div>
+      
     </div>
+
 
     <div className="row align-items-md-stretch">
       <div className="col-md-6">
         <div className="h-100 p-5 text-bg-dark rounded-3">
           <h2>Demo Surum</h2>
-          <p>BeeHilive projesinin demo versiyonudur.</p>
+          <p>BeeHiliv projesinin demo versiyonudur.</p>
           
         </div>
       </div>

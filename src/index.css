@@ -13,6 +13,7 @@ code {
 }
 
 
+
 input {
   padding: 10px;
   font-size: 1.2em;
@@ -124,4 +125,55 @@ ul {
 }
 .message.self{
   justify-content: end;
+}
+
+.messagetemp{
+  padding:5px;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  background: white;
+    position:absolute;
+    top:5px;
+    left:150px;
+  box-shadow: 00px 0px rgb(0 0 0 / 0.2);
+  margin: 5px 10px;
+}
+.messagenem{
+  padding:5px;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  background: white;
+    position:absolute;
+    top:5px;
+    left:150px;
+  box-shadow: 00px 0px rgb(0 0 0 / 0.2);
+  margin: 5px 10px;
+}
+
+.messagehava{
+  padding:5px;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  background: white;
+    position:absolute;
+    top:5px;
+    left:120px;
+  box-shadow: 00px 0px rgb(0 0 0 / 0.2);
+  margin: 5px 10px;
+}
+
+.messageagirlik{
+  padding:5px;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  background: white;
+    position:absolute;
+    top:5px;
+    left:110px;
+  box-shadow: 00px 0px rgb(0 0 0 / 0.2);
+  margin: 5px 10px;
 }

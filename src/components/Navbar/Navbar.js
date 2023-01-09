@@ -33,7 +33,8 @@ function Navbarr() {
             {localStorage.getItem("userId") == null ? <Nav.Link href="/login"></Nav.Link>:
             <>
             <Nav.Link href="/postcreate">Create Post</Nav.Link>
-            <Nav.Link href="/chat">Chat Demo</Nav.Link>
+            <Nav.Link href="/demo">Ari Kovani</Nav.Link>
+            <Nav.Link href="/chat">Uzak Konsol</Nav.Link>
             </>}
 
 

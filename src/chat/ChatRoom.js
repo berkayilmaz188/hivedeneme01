@@ -10,7 +10,8 @@ var stompClient =null;
 const ChatRoom = () => {
     const jwtToken = localStorage.getItem("JWTAccessKey");
     const [privateChats, setPrivateChats] = useState(new Map());     
-    const [publicChats, setPublicChats] = useState([]); 
+    const [publicChats, setPublicChats] = useState([]);
+    const [co2degeri, setco2degeri] = useState([]); 
     const [tab,setTab] =useState("CHATROOM");
     const [userData, setUserData] = useState({
         username: localStorage.getItem("username"),
@@ -56,6 +57,10 @@ const ChatRoom = () => {
                 publicChats.push(payloadData);
                 setPublicChats([...publicChats]);
                 break;
+            case "CO2":
+                co2degeri.push(payloadData);
+                setco2degeri([...payloadData]);
+                break;    
         }
     }
     
@@ -174,6 +179,7 @@ const ChatRoom = () => {
               </button> 
         </div>}
     </div>
+    
     )
 }
 

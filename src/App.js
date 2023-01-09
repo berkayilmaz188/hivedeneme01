@@ -25,6 +25,7 @@ function App() {
         <Route path="/post" element={<Post/>}/>
         <Route path="/users" element={<User/>}/>
         <Route path="/chat" element={<ChatRoom/>}/>
+        <Route path="/demo" element={<Chat/>}/>
         <Route path="/register" element={<Auth/>}/>
         <Route   path="/auth"
          element= {localStorage.getItem("userId") !=null ? <Navigate  to="/home"/> :<Auth/> }
